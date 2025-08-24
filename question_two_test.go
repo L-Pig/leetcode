@@ -20,16 +20,17 @@ func TestAddTwoNumbers(t *testing.T) {
 			l2 *ListNode
 		}
 		expected *ListNode
-	}{{
-		input: struct {
-			l1 *ListNode
-			l2 *ListNode
-		}{
-			l1: newListNode(2, 4, 3),
-			l2: newListNode(5, 6, 4),
+	}{
+		{
+			input: struct {
+				l1 *ListNode
+				l2 *ListNode
+			}{
+				l1: newListNode(2, 4, 3),
+				l2: newListNode(5, 6, 4),
+			},
+			expected: newListNode(7, 0, 8),
 		},
-		expected: newListNode(7, 0, 8),
-	},
 		{
 			input: struct {
 				l1 *ListNode
